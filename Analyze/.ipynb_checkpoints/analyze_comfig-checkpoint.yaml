@@ -1,0 +1,27 @@
+# APIのkeyを書く
+API_KEY : "OSmCr6yy1_jXP4xv3zSz0QojQuPNTiEi"
+API_SECRET : "4jnOrs92uM8qbA4M3mnbyHX4IxlP1gLx"
+
+# 対象にする画像が入っているディレクトリまでのパス
+target_dir_name : "../results/0711_2124_sample"
+
+# 最終的に出力がまとめられるjsonファイルの名前．Noneの場合はoutput.jsonになる
+output_json_name :
+
+# "Detect", "Compare", "Dense_Facial_Landmarks"から選択
+USE_API_Detect : True
+USE_API_Compare : False
+USE_API_Dense_Facial_Landmarks : True
+
+#USE_API_Detect:Trueなら下記の設定を書く必要がある．
+Attribute_Detect: ["gender","age","smiling","headpose",
+                  "facequality","blur","eyestatus",
+                  "emotion","ethnicity","beauty","mouthstatus",
+                  "skinstatus"]
+
+# USE_API_Compare : Trueなら下記の設定を書く必要がある．
+target_file : None
+
+# USE_API_Dense_Facial_Landmarks : Trueなら下記の設定を書く必要がある．
+Attribute_Dence: ["left_eyebrow", "right_eyebrow", "left_eye",
+                  "right_eye", "nose", "mouse", "face"] # TDOD: ここの設定を反映させる
